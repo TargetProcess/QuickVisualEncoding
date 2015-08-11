@@ -157,10 +157,14 @@ tau
 
         addBusListener('board.toolbar', 'destroy', function(e, renderData) {
 
-            bs.boardSettings
-                .unbind({
-                    listener: this
-                });
+            if (bs && bs.boardSettings) {
+
+                bs.boardSettings
+                    .unbind({
+                        listener: this
+                    });
+
+            }
 
         });
 

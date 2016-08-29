@@ -18,6 +18,7 @@ tau
             '#mashup-quick-encoding .tau-icon-colorpicker {width: 16px; height: 16px; margin: 0 -4px 0 -3px;}',
             '#mashup-quick-encoding .tau-icon-colorpicker__item {width: 7px; height: 7px; margin-bottom: 1px; margin-right: 1px; display: block; float: left; box-sizing: border-box;}',
             '#mashup-quick-encoding .tau-icon-colorpicker__item-empty {border: 1px #b7b7b7 solid;}',
+            '.tau-board-header__control--mashup { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; margin-left: 10px; }',
             '</style>'
         ].join('\n'))
 
@@ -56,14 +57,18 @@ tau
 
 
             var $button = $(_.flatten([
-                '<button class="tau-btn tau-extension-board-tooltip" id="mashup-quick-encoding" data-title="Visual encoding" alt="Visual encoding">',
+                '<button style="margin: 0" class="tau-btn i-role-board-tooltip tau-extension-board-tooltip" id="mashup-quick-encoding" data-title="Visual encoding" alt="Visual encoding">',
                     '<div class="tau-icon-colorpicker">',
                     '</div>',
-                '</button>'
+                '</button>',
                 ]).join(''));
 
             if (!$el.find('#mashup-quick-encoding').length) {
-                $el.find('[role=actions-button]').before($button);
+
+                var $elWrapper = $el.find('.tau-board-header__control--actions');
+                var $elAnchor = $elWrapper.length ? $elWrapper: $el.find('[role=actions-button]');
+
+                $elAnchor.before($('<div class="tau-board-header__control--mashup"></div>').html($button));
             }
 
             $button.tauBubble({

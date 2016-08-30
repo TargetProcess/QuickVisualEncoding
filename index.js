@@ -60,13 +60,13 @@ tau
                 '<button style="margin: 0" class="tau-btn i-role-board-tooltip tau-extension-board-tooltip" id="mashup-quick-encoding" data-title="Visual encoding" alt="Visual encoding">',
                     '<div class="tau-icon-colorpicker">',
                     '</div>',
-                '</button>',
+                '</button>'
                 ]).join(''));
 
             if (!$el.find('#mashup-quick-encoding').length) {
 
                 var $elWrapper = $el.find('.tau-board-header__control--actions');
-                var $elAnchor = $elWrapper.length ? $elWrapper: $el.find('[role=actions-button]');
+                var $elAnchor = $elWrapper.length ? $elWrapper : $el.find('[role=actions-button]');
 
                 $elAnchor.before($('<div class="tau-board-header__control--mashup"></div>').html($button));
             }

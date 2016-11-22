@@ -15,6 +15,7 @@ tau
             '.mashup-quick-encoding .tau-feedback_visual_encoding {display:none;}',
             '.mashup-quick-encoding h4 {font-family:OpenSans; font-size: 13px; font-weight: 400; color: #16343b;}',
             '.mashup-quick-encoding .tau-bubble__inner {padding:12px;}',
+            '#mashup-quick-encoding {min-width: 0;}',
             '#mashup-quick-encoding .tau-icon-colorpicker {width: 16px; height: 16px; margin: 0 -4px 0 -3px;}',
             '#mashup-quick-encoding .tau-icon-colorpicker__item {width: 7px; height: 7px; margin-bottom: 1px; margin-right: 1px; display: block; float: left; box-sizing: border-box;}',
             '#mashup-quick-encoding .tau-icon-colorpicker__item-empty {border: 1px #b7b7b7 solid;}',

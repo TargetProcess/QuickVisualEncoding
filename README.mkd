@@ -1,1 +1,4 @@
-# Quick Visual Encoding Mashup
+# MASHUPS IS DEPRECATED, DO NOT USE OR MODIFY
+# REP IS AVAILABLE FOR HISTORIC REASONS
+
+## Quick Visual Encoding Mashup
